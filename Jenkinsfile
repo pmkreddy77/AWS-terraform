@@ -6,7 +6,7 @@ node {
  stage ('build package')
  {
  def  Home = tool name: 'MK_firsttest', type: 'maven'
-  sh "{Home}/bin/mvn package"
+  sh "${Home}/bin/mvn package"
  }
 
 }
