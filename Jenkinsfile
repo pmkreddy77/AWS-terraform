@@ -1,9 +1,9 @@
 pipeline {
-agent any{
-stages("scm checkout"){
-stage ("first state"){
+agent any {
+stages("scm checkout") {
+stage ("first state") {
 steps {
-script{
+script {
 sh "echo "This is my first job""
 }
 }
