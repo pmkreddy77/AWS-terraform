@@ -1,13 +1,14 @@
-pipeline {
-agent any {
-stages("scm checkout") {
-stage ("first state") {
-steps {
-script {
-sh "echo "This is my first job""
-}
-}
-}
-}
+node {
+ stage ("check out scm")
+   {
+   """
+   sh echo "This is my test code"
+   """
+   }
+stage ("second stage")
+{
+"""
+echo "This is my 3rd code"
+"""
 }
 }
